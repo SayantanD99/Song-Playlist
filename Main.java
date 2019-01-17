@@ -19,6 +19,14 @@ public class Main {
          * Hint:  To replay a song, consider what happened when we went back and forth from a city before we started tracking the direction we were going.
          * As an optional extra, provide an option to remove the current song from the playlist
          * (hint: listiterator.remove()
+         *
+         * Modification -
+         *
+         * the Album class uses an inner class.
+         * Instead of using an ArrayList to hold its tracks, it will use an inner class called SongList
+         * The inner SongList class will use an ArrayList and will provide a method to add a song.
+         * It will also provide findSong() methods which will be used by the containing Album class to add songs to the playlist.
+         * Neither the Song class or the Main class should be changed.
          */
 
         Album album = new Album("Stormbringer", "Deep Purple");
@@ -39,9 +47,15 @@ public class Main {
 
         albums.get(0).addToPlaylist("Stormbringer",playList);
         albums.get(0).addToPlaylist("Hold on",playList);
+        albums.get(0).addToPlaylist(0,playList);
         albums.get(0).addToPlaylist(1,playList);
+        albums.get(0).addToPlaylist(2,playList);
+        albums.get(0).addToPlaylist(3,playList);
 
         albums.get(1).addToPlaylist(1,playList);
+        albums.get(1).addToPlaylist(2,playList);
+        albums.get(1).addToPlaylist(3,playList);
+
 
         play(playList);
 
