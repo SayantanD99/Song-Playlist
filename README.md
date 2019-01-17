@@ -2,7 +2,9 @@
 
 A simple menu-driven Java Program, used to implement LinkedList in Java. Creating a Song Playlist and going through it.
 
-The main Job was to -
+#1 
+
+        The main Job was to -
 
          * Create a program that implements a playlist for songs
          * Create a Song class having Title and Duration for a song.
@@ -18,7 +20,23 @@ The main Job was to -
          * As an optional extra, provide an option to remove the current song from the playlist
          * (hint: listiterator.remove()
          
-Yes, this program needs a lot of improvement. Hope you all will help. 
+#2
+
+Few modifications are made since I created this repository. 
+
+Few small changes have been made to the program code implementing inner classes.
+
+        * The Modifications -
+        
+                * the Album class uses an inner class.
+                * Instead of using an ArrayList to hold its tracks, it will use an inner class called SongList
+                * The inner SongList class will use an ArrayList and will provide a method to add a song.
+                * It will also provide findSong() methods which will be used by the containing Album class to add songs to the playlist.
+                * Neither the Song class or the Main class should be changed.
+         
+
+
+Yes, this program still needs a lot of improvement. Hope you all will help. 
 
 Feedbacks are highly appreciated.
 
